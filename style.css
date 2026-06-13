@@ -1,0 +1,246 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fffafc;
+    color:#555;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:white;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.05);
+}
+
+.logo{
+    text-align:center;
+}
+
+.mariposa{
+    font-size:2rem;
+    margin-bottom:-10px;
+}
+
+.logo h1{
+    font-family:'Playfair Display',serif;
+    font-style:italic;
+    font-size:4rem;
+    color:#d98eab;
+    letter-spacing:4px;
+}
+
+.logo p{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#999;
+    font-size:.75rem;
+}
+
+nav a{
+    text-decoration:none;
+    color:#666;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d98eab;
+}
+
+.hero{
+    min-height:90vh;
+
+    background:
+    linear-gradient(
+    rgba(255,250,252,.75),
+    rgba(255,250,252,.75)
+    ),
+    url("imagenes/banner.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero-contenido{
+    max-width:900px;
+    padding:40px;
+}
+
+.detalle{
+    color:#d98eab;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:.9rem;
+}
+
+.hero h2{
+    font-size:4rem;
+    color:#544851;
+    margin:20px 0;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.1rem;
+    line-height:1.9;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#d98eab;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(217,142,171,.4);
+}
+
+section{
+    padding:100px 10%;
+}
+
+section h2{
+    text-align:center;
+    color:#d98eab;
+    margin-bottom:40px;
+    font-size:2.5rem;
+}
+
+#nosotros p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:2;
+}
+
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(217,142,171,.25);
+}
+
+.card h3{
+    color:#d98eab;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.04);
+}
+
+#contacto{
+    text-align:center;
+}
+
+#contacto p{
+    margin-bottom:30px;
+}
+
+.whatsapp{
+    background:#25D366;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:translateY(-3px);
+}
+
+footer{
+    background:#f8dfe9;
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#666;
+}
